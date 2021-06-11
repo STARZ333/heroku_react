@@ -2,26 +2,21 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import './HomePage.css';
 import HomeElement from './HomeElement'
-function HomePage(){
+export default function HomePage(){
     return(
     <div className="home">
-        
-        {/* <h1>
-            Apex Weapon<span>A simple React Todo List App</span>
-        </h1> */}
+        <h1>
+            Apex Weapons<span>A webpage introducing Apex weapons</span>
+        </h1>
         < HomeElement/>
 
     </div>)
 }
 
-//   var HomePage = React.createClass({
-//     render:function(){
-//       return (<div className="img"></div>)
-//     }  
-//   });
-  ReactDOM.render(
-    <HomePage/>,
-    document.getElementById('root')
-  );
+
+//   ReactDOM.render(
+//     <HomePage/>,
+//     document.getElementById('root')
+//   );
   
   
