@@ -3,6 +3,10 @@ import HomePage from './HomePage';
 import Kraber from '../src/Weapon/Kraber';
 import Prowler from '../src/Weapon/Prowler';
 import Triple_take from '../src/Weapon/Triple-take';
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-CXC8DVCT6B');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 class WebsiteController extends React.Component {
     constructor(props) {
         super(props);

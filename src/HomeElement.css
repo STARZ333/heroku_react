@@ -24,9 +24,7 @@
 .mdui-col-xs-6{
     background-color: rgb(191, 243, 186);
 }
-.mdui-row{
-    /* background-color: rgb(235, 149, 37); */
-}
+
 .mdui-card{
     float: left;
     width: 25%;
@@ -39,11 +37,19 @@
 }
 
 .mdui-card-primary-title {
+    padding: 3%;
     font-size: 20px;
     line-height: 30px
 }
 
 .mdui-card-primary-subtitle {
+    padding: 3%;
     font-size: 14px;
     line-height: 20px
+}
+@media(max-width:720px) {
+    .mdui-card{
+        float: left;
+        width: 50%;
+    }
 }

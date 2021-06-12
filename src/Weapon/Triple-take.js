@@ -6,7 +6,7 @@ function Triple_take(props){
         <div>
             <button onClick={props.toHome}>Home</button>
             <h1>
-            Triple take
+                Triple take
             </h1>
         </div>
         
