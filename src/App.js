@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from 'react-ga';
+import React,{ useEffect }from "react";
 
+  
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('UA-193151170-1');
+    // To Report Page View 
+    ReactGA.pageview('/');
+  }, [])
+
+  useEffect(() => {
+   console.log(window.location.pathname)
+  })
+
   return (
     <div className="App">
       <header className="App-header">
