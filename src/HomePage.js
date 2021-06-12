@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect }from "react";
 import ReactDOM from 'react-dom';
 import './HomePage.css';
 import "./HomeElement.css";
@@ -6,7 +6,20 @@ import KraberImg from "./image/Kraber_Icon.png";
 import Prowler from "./image/Prowler_Icon.png";
 import Triple_take from "./image/Triple_Take_Icon.png";
 import HomeElement from './HomeElement'
+import ReactGA from 'react-ga';
+
 export default function HomePage(props){
+    
+    useEffect(() => {
+        ReactGA.initialize('G-CXC8DVCT6B');
+        // To Report Page View 
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      }, [])
+    
+      useEffect(() => {
+       console.log(window.location.pathname)
+      })
+
     return(
     <div className="home">
         <h1>
