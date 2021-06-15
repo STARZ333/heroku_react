@@ -5,7 +5,7 @@ import "./HomeElement.css";
 import KraberImg from "./image/Kraber_Icon.png";
 import Prowler from "./image/Prowler_Icon.png";
 import Triple_take from "./image/Triple_Take_Icon.png";
-import M600_Spitfire_Icon from "./image/M600_Spitfire_Icon.png";
+import Todolist from "./image/todolist.jpg";
 import HomeElement from './HomeElement'
 import ReactGA from 'react-ga';
 
@@ -46,7 +46,7 @@ export default function HomePage(props){
                     
                         <div class="mdui-card mdui-hoverable">
                             <div class="mdui-card-media">
-                                <img src={Prowler} width="100%" alt="升级数据"/>
+                                <img src={Prowler} width="100%" alt="Prowler"/>
                             </div>
                             <div class="mdui-card-primary">
                                 <div class="mdui-card-primary-title">Prowler</div>
@@ -58,7 +58,7 @@ export default function HomePage(props){
                 <div class="mdui-col-xs-6 mdui-col-sm-4 mdui-col-md-3" onClick={props.toTripletake}>
                         <div class="mdui-card mdui-hoverable">
                             <div class="mdui-card-media">
-                                <img width="100%" src={Triple_take} alt="攻略教程"/>
+                                <img width="100%" src={Triple_take} alt="Triple_take"/>
                             </div>
                             <div class="mdui-card-primary">
                                 <div class="mdui-card-primary-title">Triple take</div>
@@ -67,18 +67,18 @@ export default function HomePage(props){
                         </div>
                     
                 </div>
-                <div class="mdui-col-xs-6 mdui-col-sm-4 mdui-col-md-3">
-                    <a href="/search/">
+                <div class="mdui-col-xs-6 mdui-col-sm-4 mdui-col-md-3" onClick={props.toTodolist}>
+                    
                         <div class="mdui-card mdui-hoverable">
                             <div class="mdui-card-media">
-                                <img width="100%" src="https://cdn.cocservice.top/homepage/search_data.jpg" alt="信息查询"/>
+                                <img width="100%" src={Todolist} alt="Todolist"/>
                             </div>
                             <div class="mdui-card-primary">
-                                <div class="mdui-card-primary-title">信息查询</div>
-                                <div class="mdui-card-primary-subtitle">鱼情、部落和玩家</div>
+                                <div class="mdui-card-primary-title">Todolist</div>
+                                <div class="mdui-card-primary-subtitle">玩遊戲也不要忘記任務哦</div>
                             </div>
                         </div>
-                    </a>
+                    
                 </div>
                 
             </div>

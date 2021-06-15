@@ -3,6 +3,7 @@ import HomePage from './HomePage';
 import Kraber from '../src/Weapon/Kraber';
 import Prowler from '../src/Weapon/Prowler';
 import TripleTake from '../src/Weapon/TripleTake';
+import Todolist from '../src/todolist/TodoList';
 import ReactGA from 'react-ga'; 
 
 class WebsiteController extends React.Component {
@@ -14,6 +15,7 @@ class WebsiteController extends React.Component {
             kraber: false,
             prowler: false,
             tripletake:false,
+            todolist:false,
             items:[],
             isLoaded:false,
         }
@@ -22,6 +24,7 @@ class WebsiteController extends React.Component {
         this.toKraber=this.toKraber.bind(this);
         this.toProwler=this.toProwler.bind(this);
         this.toTripletake=this.toTripletake.bind(this);
+        this.toTodolist=this.toTodolist.bind(this);
     }
 
     componentDidMount(){
@@ -42,6 +45,7 @@ class WebsiteController extends React.Component {
             kraber: false,
             prowler: false,
             tripletake:false,
+            todolist:false,
         })
     };
 
@@ -65,17 +69,24 @@ class WebsiteController extends React.Component {
         this.setState({ tripletake: true })    
     }
 
+    toTodolist(){
+        this.stateAllFalse();
+        this.setState({ todolist: true })
+    }
+
 
 
     setRenderItem(){
-        if (this.state.home === true&&(this.state.kraber===false)&&(this.state.prowler===false)&&(this.state.tripletake===false))
-            return (< HomePage toKraber={this.toKraber} toProwler={this.toProwler} toTripletake={this.toTripletake} stateAllFalse={this.stateAllFalse}/>);
+        if (this.state.home === true&&(this.state.kraber===false)&&(this.state.prowler===false)&&(this.state.tripletake===false)&&(this.state.todolist===false))
+            return (< HomePage toKraber={this.toKraber} toProwler={this.toProwler} toTripletake={this.toTripletake} toTodolist={this.toTodolist} stateAllFalse={this.stateAllFalse}/>);
         else if(this.state.kraber===true)
             return(< Kraber items={this.state.items} toHome={this.toHome}/>);
         else if(this.state.prowler===true)
             return(< Prowler items={this.state.items} toHome={this.toHome}/>);
         else if(this.state.tripletake===true)
             return(< TripleTake items={this.state.items} toHome={this.toHome}/>);
+        else if(this.state.todolist===true)
+            return(< Todolist toHome={this.toHome}/>);
         
     }
     
