@@ -4,9 +4,6 @@ import './weapon.css';
 import ProwlerImg from "../image/Prowler_Icon.png";
 
 class Prowler extends Component{
-  
-  
-
   render(){
       let {items} = this.props
       return(

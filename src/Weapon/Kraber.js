@@ -4,9 +4,6 @@ import './weapon.css';
 import KraberImg from "../image/Kraber_Icon.png";
 
 class Kraber extends Component{
-  
-  
-
   render(){
       let {items} = this.props
       return(

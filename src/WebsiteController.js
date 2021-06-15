@@ -28,7 +28,7 @@ class WebsiteController extends React.Component {
     }
 
     componentDidMount(){
-        fetch('http://127.0.0.1:4000/users/signin')
+        fetch('http://100.25.199.191:4000/users/signin')
         .then(res => res.json())
         .then(json => { 
             this.setState({ 
