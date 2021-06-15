@@ -22,14 +22,17 @@
     margin-top: 0.2rem;
 }
 .mdui-col-xs-6{
-    background-color: rgb(191, 243, 186);
+    /* background-color: rgb(191, 243, 186); */
 }
 
 .mdui-card{
+    /* background-color: gr; */
     float: left;
+    
     width: 25%;
 }
 .mdui-card-media{
+     
     width: auto;
     height: auto;
     /* background-color: khaki; */

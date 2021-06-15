@@ -5,8 +5,10 @@ import "./HomeElement.css";
 import KraberImg from "./image/Kraber_Icon.png";
 import Prowler from "./image/Prowler_Icon.png";
 import Triple_take from "./image/Triple_Take_Icon.png";
+import M600_Spitfire_Icon from "./image/M600_Spitfire_Icon.png";
 import HomeElement from './HomeElement'
 import ReactGA from 'react-ga';
+
 
 export default function HomePage(props){
 
@@ -54,7 +56,6 @@ export default function HomePage(props){
                     
                 </div>
                 <div class="mdui-col-xs-6 mdui-col-sm-4 mdui-col-md-3" onClick={props.toTripletake}>
-                    
                         <div class="mdui-card mdui-hoverable">
                             <div class="mdui-card-media">
                                 <img width="100%" src={Triple_take} alt="攻略教程"/>

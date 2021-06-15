@@ -1,0 +1,56 @@
+.weapon{ 
+        background-image: url(../image/home_background_opacity.png);
+        width: 100%;
+        height: 100%;
+        background-size:cover ;
+        background-repeat:no-repeat;
+        /* opacity: 0.2; */
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+.mdui-cardss{
+    /* background-color: gr; */
+    /* float: left; */
+    
+    width: 40%;
+}
+@media screen and (max-width: 768px) { /* Specific to this particular image */
+    .mdui-cardss{
+        width: 300px;
+    }
+  }
+.mdui-card-medias{
+     
+    width: auto;
+    height: auto;
+    /* background-color: khaki; */
+    padding: 3%;
+}
+
+.mdui-card-primary-titles {
+    padding: 3%;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.mdui-card-primary-subtitles {
+    padding: 3%;
+    font-size: 14px;
+    line-height: 20px
+}
+.title{
+  font-size: 30px;
+  /* background-color:#eee; */
+  padding: 20px;
+  box-shadow: 3px 3px pink;
+}
+.weaponContent{
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 3px 3px pink;
+}
+.tb1{
+    padding: 3%;
+}
